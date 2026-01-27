@@ -1,0 +1,21 @@
+{
+  "name": "resume-generator",
+  "version": "1.0.0",
+  "description": "ATS-optimized resume generator using Claude Code",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "node compile-resume.js",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": [
+    "resume",
+    "latex",
+    "ats",
+    "claude"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}

@@ -1,73 +1,51 @@
 # Quick Start Guide
 
-Get your first AI-optimized resume in 3 minutes!
+Get your first AI-optimized resume using Claude Code (no API key needed!)
 
-## Step 1: Install Dependencies
+## Step 1: Verify Dependencies
 
 ```bash
-# Install Python packages
-pip install -r requirements.txt
+# Check if LaTeX is installed
+which pdflatex
 
-# Install LaTeX (choose your OS)
-# macOS:
+# If not installed (macOS only):
 brew install --cask mactex-no-gui
-
-# Ubuntu/Debian:
-sudo apt-get install texlive-latex-base texlive-latex-extra
-
-# Windows:
-# Download from https://miktex.org/
 ```
 
-## Step 2: Set Up API Key
+## Step 2: Set Up Your Config
 
 ```bash
-# Copy the example env file
-cp .env.example .env
+# Copy the example config
+cp config.example.json config.json
 
-# Edit .env and add your Anthropic API key
-# Get your key from: https://console.anthropic.com/
-nano .env  # or use any text editor
-```
-
-Your `.env` should look like:
-```
-ANTHROPIC_API_KEY=sk-ant-api03-xxxxxxxxxxxxxxxxxxxxx
-```
-
-## Step 3: Verify Your Config
-
-Your personalized `config.json` is already set up with your resume data!
-
-To update it:
-```bash
-# Edit your config
+# Edit with your details
 nano config.json  # or use any text editor
 ```
 
-## Step 4: Generate Your First Resume
+## Step 3: Generate Your First Resume
 
-### Test with sample job description:
-```bash
-python resume_builder.py sample_job.txt -o fintech_role
+### Method 1: Using the Slash Command (Easiest)
+
+In Claude Code:
+```
+/generate-resume job_file=sample_job.txt output_name=Dagmawi-Teka-Software-Engineer-20260127_143022
 ```
 
-### Or use a real job posting:
-```bash
-# Copy the job description to a file
-nano job_posting.txt
-# Paste the job description, save and exit
+### Method 2: Manual with Helper Script
 
-# Generate resume
-python resume_builder.py job_posting.txt -o company_role_name
+```bash
+# Prepare the environment (automatically generates name: Dagmawi-Teka-{title}-{timestamp})
+./build.sh sample_job.txt Software-Engineer
+
+# Then ask Claude Code:
+# "Generate an ATS-optimized resume from sample_job.txt,
+#  save LaTeX to output/Dagmawi-Teka-Software-Engineer-{timestamp}.tex"
+
+# Compile to PDF
+node compile-resume.js output/Dagmawi-Teka-Software-Engineer-*.tex
 ```
 
-### Or paste directly:
-```bash
-python resume_builder.py "Senior Full-Stack Engineer with React, Node.js, AWS experience..."
-```
-
-## Step 5: Get Your Resume
+## Step 4: Get Your Resume
 
 Check the `output/` directory:
 ```bash
@@ -75,126 +53,97 @@ ls -lh output/
 ```
 
 Your resume will be:
-- `output/fintech_role.pdf` - Your final resume
-- `output/fintech_role.tex` - LaTeX source (for manual edits)
+- `output/my_resume.pdf` - Your final resume
+- `output/my_resume.tex` - LaTeX source (for manual edits)
 
 ## What to Expect
 
-The multi-agent system will:
+Claude Code will:
 
-1. **[Agent 1/4]** Analyze the job description (15-20s)
-   - Shows: Must-have requirements, ATS keywords, role focus
+1. **Analyze** the job description
+   - Extract must-have requirements & ATS keywords
+   - Identify role focus and key technologies
 
-2. **[Agent 2/4]** Generate initial draft (30-40s)
-   - Shows: Number of experiences, keywords incorporated
+2. **Generate** optimized resume content
+   - Tailor professional summary
+   - Select most relevant experiences
+   - Incorporate keywords naturally
 
-3. **[Agent 3/4]** Refine for perfect alignment (30-40s)
-   - Shows: Enhanced keywords list
+3. **Create** LaTeX file
+   - Format using the optimized template
+   - Ensure proper page fitting (1-2 pages)
 
-4. **[Agent 4/4]** Validate ATS compatibility (10-15s)
-   - Shows: **ATS Score**, compatibility level, recommendations
+4. **Compile** to PDF
+   - Run pdflatex twice for proper formatting
+   - Clean up auxiliary files
 
-**Total time: 90-120 seconds**
-
-## Example Output
-
-```
-======================================================================
-                  AI-Powered Resume Builder
-======================================================================
-
-======================================================================
-              AI MULTI-AGENT RESUME OPTIMIZATION
-======================================================================
-
-[Agent 1/4] Analyzing job description...
-  ✓ Identified 12 must-have requirements
-  ✓ Found 24 critical ATS keywords
-  ✓ Role focus: Backend scalability and payment systems
-
-[Agent 2/4] Generating initial resume draft...
-  ✓ Generated resume with 4 experiences
-  ✓ Incorporated 28 keywords
-
-[Agent 3/4] Refining resume for perfect JD harmony...
-  ✓ Refinement complete
-  ✓ Enhanced keywords: React, Node.js, PostgreSQL, AWS, Docker...
-
-[Agent 4/4] Performing ATS validation...
-  ✓ ATS Score: 92/100
-  ✓ Compatibility: Excellent
-  ✓ Keywords matched: 26
-
-  Recommendations:
-    - Strong alignment with job requirements
-    - All critical keywords present
-    - Resume well-optimized for ATS
-
-======================================================================
-            MULTI-AGENT OPTIMIZATION COMPLETE
-======================================================================
-
-Generating LaTeX document...
-LaTeX file created: output/fintech_role.tex
-
-Compiling PDF...
-SUCCESS! Resume generated: output/fintech_role.pdf
-File size: 42.3 KB
-
-======================================================================
-Resume ready: output/fintech_role.pdf
-======================================================================
-```
+5. **Validate** ATS compatibility
+   - Provide ATS score estimate
+   - List matched keywords
+   - Give recommendations
 
 ## Tips for Best Results
 
 1. **Include the entire job description** - More context = better optimization
-2. **Use descriptive output names** - `python resume_builder.py job.txt -o google_swe_l5`
-3. **Review the ATS score** - Aim for 85+ for best results
-4. **Check recommendations** - Agent 4 provides improvement suggestions
-5. **Update config.json** - Keep your experiences and skills current
+2. **Use descriptive output names** - e.g., `google_swe_l5`, `acme_backend_2026`
+3. **Keep config.json updated** - Add recent experiences and skills
+4. **Review before sending** - Always check the generated PDF
+5. **Save job descriptions** - Keep them as .txt files for reuse
 
 ## Troubleshooting
 
-### API Key Error
-```
-Error: ANTHROPIC_API_KEY not found in environment
-```
-**Fix**: Make sure `.env` file exists with your API key
-
 ### LaTeX Not Found
 ```
-Error: pdflatex not found!
+✗ Error: pdflatex not found!
 ```
-**Fix**: Install LaTeX using the commands in Step 1
+**Fix**: Install LaTeX (macOS: `brew install --cask mactex-no-gui`)
 
-### ATS Score Low (<70)
+### Config Not Found
+```
+Error: config.json not found
+```
+**Fix**: Copy config.example.json to config.json and fill in your details
+
+### Resume Too Long
 **Fix**:
-- Check if job description is complete
-- Update `config.json` with more relevant experiences
-- Regenerate the resume
+- Edit config.json to remove less relevant experience
+- Ask Claude Code to be more concise
+- Select only 3-4 most relevant positions
 
-## Cost
+### Compilation Errors
+**Fix**: Check the .log file in output/ for LaTeX errors
 
-Each resume costs approximately **$0.10-0.15** (using Claude Sonnet 4)
-- Very affordable for job searching!
-- 4 AI agent calls per resume
+## Key Features
+
+- **No API costs** - Uses Claude Code directly (free!)
+- **Fast compilation** - Node.js tools for quick PDF generation
+- **Smart page fitting** - Optimized LaTeX template
+- **ATS optimized** - Keyword extraction and proper formatting
+- **Lightweight** - Minimal dependencies
+
+## Example Workflow
+
+```bash
+# 1. Save job description
+cat > meta_engineer.txt << 'EOF'
+Software Engineer, Infrastructure
+Requirements: Go, Kubernetes, distributed systems...
+EOF
+
+# 2. Generate resume (in Claude Code)
+/generate-resume job_file=meta_engineer.txt output_name=Dagmawi-Teka-Meta-Infrastructure-20260127_143022
+
+# 3. Your PDF is ready!
+open output/Dagmawi-Teka-Meta-Infrastructure-*.pdf
+```
 
 ## Next Steps
 
 - Try with different job descriptions
+- Keep config.json updated with latest experience
 - Experiment with output names for organization
-- Keep your `config.json` updated
-- Review and customize generated resumes before sending
-
-## Need Help?
-
-Check the main [README.md](README.md) for:
-- Detailed documentation
-- More examples
-- Customization options
-- Template modifications
+- Review each resume before sending
 
 ---
 
-**Happy job hunting!** 🚀
+**Happy job hunting!**

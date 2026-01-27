@@ -1,12 +1,13 @@
-\documentclass[11pt,letterpaper]{article}
+\documentclass[10.5pt,letterpaper]{article}
 
 % ATS-Friendly Resume Template
 % No graphics, clean formatting, standard fonts
+% Optimized for maximum content density while maintaining readability
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
-\usepackage[margin=0.6in]{geometry}
+\usepackage[top=0.5in, bottom=0.5in, left=0.6in, right=0.6in]{geometry}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{hyperref}
@@ -24,7 +25,7 @@
     pdfauthor={{{NAME}}}
 }
 
-% Section formatting - ATS friendly
+% Section formatting - ATS friendly with tighter spacing
 \titleformat{\section}
   {\large\bfseries\uppercase}
   {}
@@ -32,18 +33,24 @@
   {}
   [\titlerule]
 
-\titlespacing{\section}{0pt}{12pt}{6pt}
+\titlespacing{\section}{0pt}{8pt}{4pt}
 
-% Compact lists
-\setlist[itemize]{leftmargin=*, noitemsep, topsep=0pt}
+% Compact lists with optimized spacing
+\setlist[itemize]{leftmargin=*, itemsep=1pt, topsep=2pt, parsep=0pt}
+
+% Reduce spacing between paragraphs
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
 
 % Custom commands
 \newcommand{\resumeSubheading}[4]{
   \item[]
+  \vspace{-2pt}
     \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{#3} & \textit{#4} \\
+      \textit{\small #3} & \textit{\small #4} \\
     \end{tabular*}
+    \vspace{-4pt}
 }
 
 \newcommand{\resumeItem}[1]{
@@ -52,14 +59,14 @@
 
 \begin{document}
 
-% Header
+% Header - compact and clean
 \begin{center}
-    \textbf{\LARGE {{NAME}}} \\[4pt]
-    \small {{EMAIL}} $|$ {{PHONE}} $|$ {{LOCATION}} \\
-    {{LINKS}}
+    \textbf{\LARGE {{NAME}}} \\[3pt]
+    \small {{EMAIL}} $|$ {{PHONE}} $|$ {{LOCATION}} \\[2pt]
+    \small {{LINKS}}
 \end{center}
 
-\vspace{-8pt}
+\vspace{-6pt}
 
 % Professional Summary
 {{SUMMARY_SECTION}}

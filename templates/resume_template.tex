@@ -13,6 +13,7 @@
 \usepackage{titlesec}
 \usepackage{hyperref}
 \usepackage{xcolor}
+\usepackage{microtype} % Better text justification and spacing
 
 % Remove page numbers
 \pagestyle{empty}
@@ -42,6 +43,13 @@
 % Reduce spacing between paragraphs
 \setlength{\parskip}{0pt}
 \setlength{\parindent}{0pt}
+
+% Perfect justification settings
+\sloppy % Better line breaking
+\emergencystretch=1em % Allow some stretch for better justification
+\tolerance=1000 % Better word spacing
+\hyphenpenalty=2000 % Reduce hyphenation
+\exhyphenpenalty=2000 % Reduce hyphenation at explicit hyphens
 
 % Custom commands
 \newcommand{\resumeSubheading}[4]{

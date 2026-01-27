@@ -84,6 +84,7 @@ Create the resume LaTeX file at: output/{{output_name}}.tex
 
 Replace these placeholders in the template:
 - {{NAME}}: Use name from config.json
+- {{TITLE}}: Use the extracted job title from STAGE 0 (e.g., "React Native Developer", "Full-Stack Mobile Developer | React Native \& Node.js")
 - {{EMAIL}}: Use email from config.json
 - {{PHONE}}: Use phone from config.json
 - {{LOCATION}}: Use location from config.json

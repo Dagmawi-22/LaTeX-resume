@@ -1,0 +1,45 @@
+React Native Developer Job Description
+We are looking for a skilled React Native Developer to join our team and help build cross-platform mobile applications. In this role, you will design, develop, and maintain high-quality mobile apps for iOS and Android platforms using React Native framework with TypeScript, global state management solutions, and Expo.
+
+Responsibilities:
+Design and develop robust and scalable mobile applications using React Native, TypeScript, and Expo
+Create reusable components and libraries for future use
+Implement and maintain global state management solutions using Redux, MobX, or Context API
+Leverage Expo's tools and services to streamline development and deployment processes
+Translate designs and wireframes into high-quality TypeScript code
+Optimize application performance across both iOS and Android platforms
+Collaborate with cross-functional teams to define, design, and ship new features
+Integrate with RESTful APIs and third-party services
+Identify and fix bugs and performance bottlenecks
+Write clean, maintainable, and well-documented TypeScript code
+Participate in code reviews and contribute to team knowledge sharing
+Requirements and Qualifications:
+Bachelor's degree in Computer Science, Information Technology, or a related field, or equivalent experience
+1-2 years of experience with React Native development
+Strong proficiency in TypeScript and React/React Native
+Proven experience working with Expo framework and its ecosystem
+Advanced knowledge of global state management (Redux, MobX, Zustand, or Context API)
+Understanding of Expo's capabilities, limitations, and configuration options
+Experience with Expo's build service, OTA updates, and publishing workflow
+Understanding of RESTful APIs and integration techniques
+Familiarity with TypeScript-based design patterns and best practices
+Knowledge of mobile UI/UX design principles and best practices
+Experience with version control systems, preferably Git
+Problem-solving aptitude with attention to detail
+Excellent communication skills and ability to work in a team environment
+Preferred Qualifications:
+Experience with Expo modules and custom native code integration
+Experience with ejecting from Expo or using Expo's development clients
+Knowledge of Expo's notification system, deep linking, and authentication solutions
+Experience with navigation libraries in Expo projects (React Navigation)
+Advanced skills in global state architecture design and implementation
+Experience with TypeScript configuration and optimization in React Native/Expo projects
+Familiarity with automated testing frameworks for TypeScript/React Native/Expo
+Experience with offline storage, threading, and performance optimization
+Understanding of CI/CD workflows for Expo applications
+Experience with app deployment to Google Play Store and Apple App Store via Expo or EAS
+Knowledge of app security best practices
+Experience with real-time communication (WebSockets, Firebase) in Expo applications
+Familiarity with analytics and crash reporting tools integrated with Expo
+Contributions to open-source projects or personal projects demonstrating React Native, TypeScript, and Expo skills
+If you are passionate about creating seamless mobile experiences and have a strong foundation in React Native development with TypeScript, global state management, and Expo, we encourage you to apply for this exciting opportunity.

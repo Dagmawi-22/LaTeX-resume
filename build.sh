@@ -14,15 +14,16 @@ NC='\033[0m' # No Color
 
 # Get arguments
 JOB_FILE="$1"
-TITLE="${2:-Resume}"
-OUTPUT_NAME="Dagmawi-Teka-${TITLE}-$(date +%Y%m%d_%H%M%S)"
 
 # Check if job file is provided
 if [ -z "$JOB_FILE" ]; then
     echo -e "${RED}Error: Please provide a job description file${NC}"
-    echo "Usage: ./build.sh <job_file> [title]"
-    echo "Example: ./build.sh sample_job.txt Software-Engineer"
-    echo "Output format: Dagmawi-Teka-{title}-{timestamp}"
+    echo ""
+    echo "Usage: ./build.sh <job_file>"
+    echo "Example: ./build.sh sample_job.txt"
+    echo ""
+    echo "Note: Output filename is automatically generated from the job title"
+    echo "Format: Dagmawi-Teka-{Role-Title}-{timestamp}"
     exit 1
 fi
 
@@ -47,7 +48,6 @@ echo -e "${BLUE}           Resume Generation Helper${NC}"
 echo -e "${BLUE}════════════════════════════════════════════════════════${NC}"
 echo ""
 echo -e "${YELLOW}Job file:${NC} $JOB_FILE"
-echo -e "${YELLOW}Output name:${NC} $OUTPUT_NAME"
 echo ""
 echo -e "${GREEN}✓ Configuration files found${NC}"
 echo -e "${GREEN}✓ Output directory ready${NC}"
@@ -56,16 +56,20 @@ echo -e "${BLUE}─────────────────────�
 echo -e "${YELLOW}Ready to generate resume!${NC}"
 echo ""
 echo "Next steps:"
-echo "1. Claude Code will analyze the job description"
-echo "2. Generate optimized resume content"
-echo "3. Create LaTeX file at: output/${OUTPUT_NAME}.tex"
-echo "4. Compile to PDF using: node compile-resume.js output/${OUTPUT_NAME}.tex"
+echo "1. Use the slash command in Claude Code:"
+echo "   /generate-resume j=$JOB_FILE"
+echo ""
+echo "2. Claude Code will:"
+echo "   - Analyze the job description"
+echo "   - Extract the role title automatically"
+echo "   - Generate optimized resume content"
+echo "   - Create LaTeX file at: output/Dagmawi-Teka-{Role}-{timestamp}.tex"
+echo "   - Compile to PDF"
 echo ""
 echo -e "${BLUE}────────────────────────────────────────────────────────${NC}"
 
 # Export variables for use by other scripts
 export JOB_FILE
-export OUTPUT_NAME
 
 echo ""
-echo -e "${GREEN}Environment ready. You can now use Claude Code to generate the resume.${NC}"
+echo -e "${GREEN}Environment ready. Run the slash command above in Claude Code.${NC}"

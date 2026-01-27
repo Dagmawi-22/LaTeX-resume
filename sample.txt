@@ -1,0 +1,37 @@
+About the job
+Role Overview
+
+We are looking for a skilled Node.js Developer to design, develop, and maintain scalable backend applications and services. The ideal candidate should have strong experience in building RESTful APIs, working with databases, and delivering high-performance server-side solutions in an Agile environment.
+Key Responsibilities
+
+Develop and maintain server-side applications using Node.js
+Design and implement RESTful APIs and microservices
+Collaborate with front-end developers to integrate user-facing elements
+Optimize applications for performance, scalability, and security
+Write clean, reusable, and well-documented code
+Implement authentication, authorization, and data protection
+Perform unit and integration testing
+Troubleshoot, debug, and upgrade existing systems
+Participate in code reviews and Agile ceremonies
+Required Skills & Qualifications
+
+4+ years of experience in Node.js development
+Strong knowledge of JavaScript (ES6+)
+Experience with frameworks like Express.js / NestJS
+Hands-on experience with databases (MongoDB, PostgreSQL, MySQL)
+Experience building and consuming REST APIs
+Understanding of asynchronous programming, event loop, and non-blocking I/O
+Familiarity with Git and version control workflows
+Knowledge of JWT, OAuth, and API security best practices
+Experience working in Agile/Scrum environments
+Good to Have
+
+Experience with TypeScript
+Knowledge of microservices architecture
+Experience with Docker / Kubernetes
+Familiarity with cloud platforms (AWS, Azure, GCP)
+Exposure to CI/CD pipelines
+Basic understanding of frontend frameworks (Angular/React)
+Education
+
+Bachelor’s degree in Computer Science, Engineering, or a related field (or equivalent practical experience)

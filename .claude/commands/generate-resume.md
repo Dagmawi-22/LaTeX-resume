@@ -44,6 +44,8 @@ Create an optimized resume that:
    - Quantifiable metrics
    - Keywords naturally incorporated
    - 2-3 bullets per experience highlighting impact
+   - **IMPORTANT:** Don't just copy achievements from config.json - enrich and expand them based on the job context by inferring and adding similar relevant accomplishments that align with the role requirements
+   - **AI-Native Style:** If the JD emphasizes AI/LLM integration, cutting-edge tools, or modern development practices, highlight AI-native working style and proficiency with advanced tools (Claude Code, MCP, AI-assisted development workflows, prompt engineering, etc.)
 5. Creates a skills section organized by category with JD keywords
 6. Uses hyphens (-) never em dashes
 7. Fits in 1-2 pages maximum

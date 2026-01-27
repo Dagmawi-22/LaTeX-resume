@@ -74,4 +74,5 @@ Print the full report and confirm the PDF location.
 
 Variables to use:
 - job_file: The job description file path (passed as argument)
-- output_name: The output filename without extension (passed as argument or use timestamp)
+- output_name: The output filename without extension (use format: Dagmawi-Teka-{title}-{timestamp})
+  Example: Dagmawi-Teka-Software-Engineer-20260127_143022

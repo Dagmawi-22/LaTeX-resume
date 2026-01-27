@@ -28,21 +28,20 @@ nano config.json  # or use any text editor
 
 In Claude Code:
 ```
-/generate-resume job_file=sample_job.txt output_name=Dagmawi-Teka-Software-Engineer-20260127_143022
+/generate-resume j=sample_job.txt
 ```
+
+That's it! The role title is **automatically extracted** from the job description.
+Output will be: `Dagmawi-Teka-{Role-Title}-{timestamp}.pdf`
 
 ### Method 2: Manual with Helper Script
 
 ```bash
-# Prepare the environment (automatically generates name: Dagmawi-Teka-{title}-{timestamp})
-./build.sh sample_job.txt Software-Engineer
+# Prepare the environment
+./build.sh sample_job.txt
 
-# Then ask Claude Code:
-# "Generate an ATS-optimized resume from sample_job.txt,
-#  save LaTeX to output/Dagmawi-Teka-Software-Engineer-{timestamp}.tex"
-
-# Compile to PDF
-node compile-resume.js output/Dagmawi-Teka-Software-Engineer-*.tex
+# Then use the slash command shown in the output:
+/generate-resume j=sample_job.txt
 ```
 
 ## Step 4: Get Your Resume
@@ -52,32 +51,38 @@ Check the `output/` directory:
 ls -lh output/
 ```
 
-Your resume will be:
-- `output/my_resume.pdf` - Your final resume
-- `output/my_resume.tex` - LaTeX source (for manual edits)
+Your resume will be named automatically:
+- `output/Dagmawi-Teka-{Role}-{timestamp}.pdf` - Your final resume
+- `output/Dagmawi-Teka-{Role}-{timestamp}.tex` - LaTeX source (for manual edits)
+
+Example: `Dagmawi-Teka-Backend-Developer-20260127_153045.pdf`
 
 ## What to Expect
 
 Claude Code will:
 
-1. **Analyze** the job description
+1. **Extract role title** automatically
+   - Analyzes job description for role name
+   - Generates filename: Dagmawi-Teka-{Role}-{timestamp}
+
+2. **Analyze** the job description
    - Extract must-have requirements & ATS keywords
    - Identify role focus and key technologies
 
-2. **Generate** optimized resume content
+3. **Generate** optimized resume content
    - Tailor professional summary
-   - Select most relevant experiences
+   - Select most relevant experiences (reverse chronological)
    - Incorporate keywords naturally
 
-3. **Create** LaTeX file
-   - Format using the optimized template
-   - Ensure proper page fitting (1-2 pages)
+4. **Create** LaTeX file
+   - Format using the optimized template (Charter font)
+   - Ensure proper spacing and page fitting (1-2 pages)
 
-4. **Compile** to PDF
+5. **Compile** to PDF
    - Run pdflatex twice for proper formatting
    - Clean up auxiliary files
 
-5. **Validate** ATS compatibility
+6. **Validate** ATS compatibility
    - Provide ATS score estimate
    - List matched keywords
    - Give recommendations
@@ -85,10 +90,10 @@ Claude Code will:
 ## Tips for Best Results
 
 1. **Include the entire job description** - More context = better optimization
-2. **Use descriptive output names** - e.g., `google_swe_l5`, `acme_backend_2026`
-3. **Keep config.json updated** - Add recent experiences and skills
-4. **Review before sending** - Always check the generated PDF
-5. **Save job descriptions** - Keep them as .txt files for reuse
+2. **Keep config.json updated** - Add recent experiences and skills
+3. **Review before sending** - Always check the generated PDF
+4. **Save job descriptions** - Keep them as .txt files for reuse
+5. **Use descriptive filenames** - Name job files clearly (e.g., `google-swe.txt`, `meta-backend.txt`)
 
 ## Troubleshooting
 
@@ -131,17 +136,20 @@ Requirements: Go, Kubernetes, distributed systems...
 EOF
 
 # 2. Generate resume (in Claude Code)
-/generate-resume job_file=meta_engineer.txt output_name=Dagmawi-Teka-Meta-Infrastructure-20260127_143022
+/generate-resume j=meta_engineer.txt
+
+# Role title automatically extracted as "Software-Engineer"
+# Output: Dagmawi-Teka-Software-Engineer-{timestamp}.pdf
 
 # 3. Your PDF is ready!
-open output/Dagmawi-Teka-Meta-Infrastructure-*.pdf
+open output/Dagmawi-Teka-Software-Engineer-*.pdf
 ```
 
 ## Next Steps
 
 - Try with different job descriptions
 - Keep config.json updated with latest experience
-- Experiment with output names for organization
+- Save job files with clear names for easy organization
 - Review each resume before sending
 
 ---

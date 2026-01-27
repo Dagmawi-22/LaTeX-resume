@@ -6,7 +6,8 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{lmodern}
+\usepackage{charter} % Professional serif font - clean and readable
+\usepackage[scaled=0.92]{helvet} % Sans-serif for contrast
 \usepackage[top=0.5in, bottom=0.5in, left=0.6in, right=0.6in]{geometry}
 \usepackage{enumitem}
 \usepackage{titlesec}
@@ -25,7 +26,7 @@
     pdfauthor={{{NAME}}}
 }
 
-% Section formatting - ATS friendly with tighter spacing
+% Section formatting - ATS friendly with proper spacing
 \titleformat{\section}
   {\large\bfseries\uppercase}
   {}
@@ -33,10 +34,10 @@
   {}
   [\titlerule]
 
-\titlespacing{\section}{0pt}{8pt}{4pt}
+\titlespacing{\section}{0pt}{10pt}{6pt}
 
-% Compact lists with optimized spacing
-\setlist[itemize]{leftmargin=*, itemsep=1pt, topsep=2pt, parsep=0pt}
+% Compact lists with balanced spacing for readability
+\setlist[itemize]{leftmargin=*, itemsep=2pt, topsep=3pt, parsep=0pt}
 
 % Reduce spacing between paragraphs
 \setlength{\parskip}{0pt}
@@ -45,16 +46,16 @@
 % Custom commands
 \newcommand{\resumeSubheading}[4]{
   \item[]
-  \vspace{-2pt}
+  \vspace{-1pt}
     \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small #3} & \textit{\small #4} \\
     \end{tabular*}
-    \vspace{-4pt}
+    \vspace{-2pt}
 }
 
 \newcommand{\resumeItem}[1]{
-  \item \small{#1}
+  \item[$\cdot$] \small{#1}
 }
 
 \begin{document}
@@ -71,21 +72,27 @@
 % Professional Summary
 {{SUMMARY_SECTION}}
 
+\vspace{2pt}
+
 % Experience
 \section{Experience}
 \begin{itemize}[leftmargin=0pt, label={}]
 {{EXPERIENCE_SECTION}}
 \end{itemize}
 
+\vspace{2pt}
+
+% Skills
+\section{Technical Skills}
+{{SKILLS_SECTION}}
+
+\vspace{2pt}
+
 % Education
 \section{Education}
 \begin{itemize}[leftmargin=0pt, label={}]
 {{EDUCATION_SECTION}}
 \end{itemize}
-
-% Skills
-\section{Technical Skills}
-{{SKILLS_SECTION}}
 
 % Projects (if included)
 {{PROJECTS_SECTION}}

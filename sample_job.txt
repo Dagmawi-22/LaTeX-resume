@@ -1,0 +1,63 @@
+Senior Full-Stack Engineer - Fintech Platform
+
+Company: TechVentures Inc.
+Location: Remote (US/Europe/Africa)
+Type: Full-time
+
+About the Role:
+
+We're seeking an experienced Senior Full-Stack Engineer to join our growing fintech team. You'll be responsible for building and scaling our payment processing platform that handles millions of transactions daily.
+
+Key Responsibilities:
+
+- Design and develop scalable microservices architecture for payment processing
+- Build responsive, user-friendly frontend applications using React and Next.js
+- Implement secure REST APIs and GraphQL endpoints
+- Optimize database queries and implement caching strategies for high-traffic systems
+- Integrate third-party payment gateways and financial APIs
+- Ensure PCI-DSS compliance and implement security best practices
+- Collaborate with product and design teams to deliver features end-to-end
+- Write comprehensive tests and maintain CI/CD pipelines
+- Mentor junior engineers and conduct code reviews
+
+Required Qualifications:
+
+- 4+ years of professional software development experience
+- Strong proficiency in React, Next.js, and modern JavaScript/TypeScript
+- Extensive backend experience with Node.js, NestJS, or similar frameworks
+- Deep understanding of RESTful APIs and GraphQL
+- Experience with SQL databases (PostgreSQL, MySQL) and NoSQL (MongoDB, Redis)
+- Proven track record with AWS or other cloud platforms (EC2, S3, Lambda)
+- Strong understanding of authentication, authorization, and security best practices
+- Experience with Docker and containerization
+- Proficiency with Git and GitHub workflows
+- Excellent problem-solving skills and attention to detail
+
+Preferred Qualifications:
+
+- Experience in fintech, payment systems, or financial technology
+- Knowledge of real-time data processing and WebSockets
+- Experience with microservices architecture and message queues (Kafka, RabbitMQ)
+- Familiarity with mobile development (React Native)
+- Experience with monitoring tools like Sentry
+- Understanding of Agile/Scrum methodologies
+- Strong communication skills and ability to work in distributed teams
+
+Technical Stack:
+
+Frontend: React, Next.js, TypeScript, Tailwind CSS, Redux/Zustand
+Backend: NestJS, Node.js, GraphQL, REST APIs
+Databases: PostgreSQL, Redis, MongoDB
+Infrastructure: AWS (EC2, S3, Lambda, DynamoDB), Docker, Kubernetes
+Tools: GitHub Actions, CI/CD, Nginx, Microservices
+
+What We Offer:
+
+- Competitive salary and equity
+- Remote-first culture
+- Professional development budget
+- Health insurance and benefits
+- Flexible working hours
+- Opportunity to work on cutting-edge fintech solutions
+
+If you're passionate about building scalable, secure financial systems and want to make an impact in the fintech space, we'd love to hear from you!

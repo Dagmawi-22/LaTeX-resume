@@ -1,0 +1,89 @@
+\documentclass[11pt,letterpaper]{article}
+
+% ATS-Friendly Resume Template
+% No graphics, clean formatting, standard fonts
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    pdftitle={Resume},
+    pdfauthor={{{NAME}}}
+}
+
+% Section formatting - ATS friendly
+\titleformat{\section}
+  {\large\bfseries\uppercase}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+% Compact lists
+\setlist[itemize]{leftmargin=*, noitemsep, topsep=0pt}
+
+% Custom commands
+\newcommand{\resumeSubheading}[4]{
+  \item[]
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeItem}[1]{
+  \item \small{#1}
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    \textbf{\LARGE {{NAME}}} \\[4pt]
+    \small {{EMAIL}} $|$ {{PHONE}} $|$ {{LOCATION}} \\
+    {{LINKS}}
+\end{center}
+
+\vspace{-8pt}
+
+% Professional Summary
+{{SUMMARY_SECTION}}
+
+% Experience
+\section{Experience}
+\begin{itemize}[leftmargin=0pt, label={}]
+{{EXPERIENCE_SECTION}}
+\end{itemize}
+
+% Education
+\section{Education}
+\begin{itemize}[leftmargin=0pt, label={}]
+{{EDUCATION_SECTION}}
+\end{itemize}
+
+% Skills
+\section{Technical Skills}
+{{SKILLS_SECTION}}
+
+% Projects (if included)
+{{PROJECTS_SECTION}}
+
+% Certifications (if included)
+{{CERTIFICATIONS_SECTION}}
+
+\end{document}

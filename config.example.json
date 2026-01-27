@@ -1,0 +1,80 @@
+{
+  "personal_info": {
+    "name": "Your Full Name",
+    "email": "your.email@example.com",
+    "phone": "+1 (555) 123-4567",
+    "location": "City, State",
+    "linkedin": "linkedin.com/in/yourprofile",
+    "github": "github.com/yourusername",
+    "website": "yourwebsite.com"
+  },
+  "professional_summary": "A brief professional summary describing your expertise, experience, and career focus. This will be tailored to each job application.",
+  "experience": [
+    {
+      "company": "Company Name",
+      "position": "Job Title",
+      "location": "City, State",
+      "start_date": "Jan 2020",
+      "end_date": "Present",
+      "achievements": [
+        "Achievement or responsibility with quantifiable results",
+        "Another key accomplishment demonstrating impact",
+        "Technical project or initiative you led"
+      ]
+    },
+    {
+      "company": "Previous Company",
+      "position": "Previous Role",
+      "location": "City, State",
+      "start_date": "Jun 2018",
+      "end_date": "Dec 2019",
+      "achievements": [
+        "Key achievement from this role",
+        "Another accomplishment with metrics",
+        "Technical contribution or project"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University Name",
+      "degree": "Bachelor of Science in Computer Science",
+      "location": "City, State",
+      "graduation_date": "May 2018",
+      "gpa": "3.8/4.0",
+      "honors": "Summa Cum Laude"
+    }
+  ],
+  "skills": {
+    "programming_languages": ["Python", "JavaScript", "Java", "C++"],
+    "frameworks": ["React", "Node.js", "Django", "Spring Boot"],
+    "tools": ["Git", "Docker", "AWS", "Jenkins"],
+    "databases": ["PostgreSQL", "MongoDB", "Redis"],
+    "other": ["Agile/Scrum", "CI/CD", "Microservices", "REST APIs"]
+  },
+  "projects": [
+    {
+      "name": "Project Name",
+      "description": "Brief description of the project and your role",
+      "technologies": ["Tech1", "Tech2", "Tech3"],
+      "link": "github.com/yourusername/project"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Solutions Architect",
+      "issuer": "Amazon Web Services",
+      "date": "2023"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "proficiency": "Native"
+    },
+    {
+      "language": "Spanish",
+      "proficiency": "Professional Working Proficiency"
+    }
+  ]
+}

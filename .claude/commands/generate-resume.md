@@ -4,6 +4,12 @@ description: Generate an ATS-optimized resume from a job description
 
 You are an expert resume optimization system with 4 specialized analysis stages.
 
+## CRITICAL RULES - NEVER BREAK THESE:
+1. **EXACTLY 1 PAGE - NO EXCEPTIONS** - Compress until it fits
+2. **SECTION ORDER IS FIXED:** Summary → Experience → Skills → Education (Education ALWAYS last)
+3. **MINIMAL SPACING:** Use \vspace{0pt} between sections, \vspace{2pt} max between items
+4. **NEVER ASK FOR CLARIFICATION ON PAGE LENGTH OR SECTION ORDER** - These are fixed requirements
+
 Read the job description from: {{j}}
 Read my resume data from: config.json
 Use the LaTeX template from: templates/resume_template.tex
@@ -48,7 +54,7 @@ Create an optimized resume that:
    - **AI-Native Style:** If the JD emphasizes AI/LLM integration, cutting-edge tools, or modern development practices, highlight AI-native working style and proficiency with advanced tools (Claude Code, MCP, AI-assisted development workflows, prompt engineering, etc.)
 5. Creates a skills section organized by category with JD keywords
 6. Uses hyphens (-) never em dashes
-7. Fits in 1-2 pages maximum
+7. **CRITICAL: MUST FIT ON EXACTLY 1 PAGE - NO EXCEPTIONS**
 8. Follows this format exactly for each experience:
    - Company name, location
    - Position title, dates (Mon YYYY - Mon YYYY or Present)
@@ -58,13 +64,23 @@ Create an optimized resume that:
 
 Create the resume LaTeX file at: output/{{output_name}}.tex
 
-**Section Order (IMPORTANT):**
+**Section Order (NON-NEGOTIABLE - NEVER CHANGE THIS ORDER):**
 1. Professional Summary
 2. Experience (reverse chronological order - most recent first)
-3. Skills (before Education)
-4. Education
-5. Projects (optional)
-6. Certifications (optional)
+3. Skills (Technical Skills section)
+4. Education (ALWAYS LAST - NEVER BEFORE SKILLS)
+5. Projects (optional - rarely include unless explicitly relevant)
+6. Certifications (optional - rarely include)
+
+**ONE-PAGE OPTIMIZATION (ABSOLUTELY CRITICAL - NO EXCEPTIONS):**
+- **MUST FIT ON EXACTLY 1 PAGE - If it doesn't fit, reduce content until it does**
+- After summary section: \vspace{1pt} or \vspace{0pt}
+- Between experience entries: \vspace{2pt} or less
+- Between Education entries: \vspace{1pt}
+- Between sections: \vspace{0pt} ALWAYS
+- In skills section line breaks: just \\ with NO spacing like \\[1pt]
+- Keep skills VERY concise - max 4 categories, remove all redundant/obvious items
+- If still overflowing: reduce bullet points, shorten descriptions, or drop least relevant experience
 
 Replace these placeholders in the template:
 - {{NAME}}: Use name from config.json
@@ -73,9 +89,9 @@ Replace these placeholders in the template:
 - {{LOCATION}}: Use location from config.json
 - {{LINKS}}: Format as: linkedin | github | website with proper LaTeX hyperlinks
 - {{SUMMARY_SECTION}}: Add \section{Professional Summary} with tailored summary
-- {{EXPERIENCE_SECTION}}: Format all experiences using \resumeSubheading (reverse chronological - most recent first, add \vspace{4pt} between jobs)
-- {{SKILLS_SECTION}}: Format skills by category with \textbf{Category:} skills \\[2pt]
-- {{EDUCATION_SECTION}}: Format education entries
+- {{EXPERIENCE_SECTION}}: Format all experiences using \resumeSubheading (reverse chronological - most recent first, add \vspace{2pt} between jobs)
+- {{SKILLS_SECTION}}: Format skills by category with \textbf{Category:} skills \\ (no spacing)
+- {{EDUCATION_SECTION}}: Format education entries (add \vspace{1pt} between entries)
 - {{PROJECTS_SECTION}}: Include if relevant, otherwise empty string
 - {{CERTIFICATIONS_SECTION}}: Include if relevant, otherwise empty string
 

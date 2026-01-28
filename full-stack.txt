@@ -1,0 +1,52 @@
+Full-Stack Developer (Node.js, React)
+
+DesignKey
+·  Subscribe
+Save
+ Hide
+You have a conversation with this recruiter already. Open dialog →
+Join our team to build and grow modern web applications using Node.js (NestJS) and React.
+Some projects also involve .NET Core — experience with it will be a plus, but it’s not mandatory. 
+You’ll work closely with PMs and clients, contribute to technical decisions, and use AI-assisted coding tools to boost productivity.
+
+Responsibilities:
+
+Develop and maintain web applications and service, sprimarily using NestJS (Node.js) and React.
+Participate in projects built on .NET Core, if applicable.
+Write clean, readable, and maintainable code following best practices.
+Design and implement databases and APIs, (microservices / monolith).
+Support and enhance existing features, as well as build new ones.
+Collaborate proactively with teammates to ensure high-quality delivery.
+Take part in project estimation to ensure realistic timelines and workload.
+Manage the technical debt backlog when required.
+Work closely with project managers and clients to understand requirements and improve product development.
+ 
+
+Requirements:
+
+Solid experience with NestJS (Node.js).
+Good knowledge of React.
+Strong proficiency in C#, ASP.NET, TypeScript will be a plus.
+You must have worked with Cursor AI, Cline, Claude Code, or similar for writing code with AI-assisted coding.
+Strong analytical skills and ability to effectively utilize AI tools for increased productivity.
+At least 2 years of experience in Web UI and API development.
+Strong knowledge of REST API implementation.
+Experience integrating with third-party APIs and services.
+Good understanding of SQL and MySQL.
+Experience working with Git for version control.
+Familiarity with Azure or AWS.
+Understanding of DevOps practices is a plus.
+ 
+
+What We Offer
+
+Competitive salary with regular reviews.
+Support for individual entrepreneurs with accounting assistance.
+Fully remote work.
+A clear path for professional development and growth.
+A friendly team environment and engaging team-building activities (online and offline).
+Required skills experience
+React.js	1 year
+Node.js	1 year
+Nest.js	1 year
+Artificial Intelligence (AI)	6 months

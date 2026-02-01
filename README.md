@@ -10,17 +10,15 @@
 ## Prerequisites
 
 1. **Claude Code CLI** - https://docs.claude.com/en/docs/claude-code
-2. **Python 3.8+** - `python3 --version`
-3. **Anthropic API Key** - Get from https://console.anthropic.com/
+2. **Anthropic API Key** - Get from https://console.anthropic.com/
 
 **Optional:** LaTeX (for local PDF compilation) - Otherwise use Overleaf online
 
 ## Setup
 
 ```bash
-# 1. Clone and install dependencies
+# 1. Clone repository
 git clone <repo-url> && cd my-resume
-pip install -r requirements.txt
 
 # 2. Authenticate Claude Code (if not done)
 claude auth login
@@ -39,7 +37,7 @@ Requirements: 5+ years React/Node.js, TypeScript, AWS, microservices...
 EOF
 
 # Generate resume
-/generate-resume job.txt
+/generate-resume j=job.txt
 
 # Output: output/resume_YYYYMMDD_HHMMSS.tex (+ .pdf if LaTeX installed)
 ```
@@ -98,6 +96,3 @@ sudo apt-get install texlive-latex-base texlive-latex-extra texlive-fonts-recomm
 - **Review before submitting** - always verify accuracy and formatting
 - **Check ATS score** - aim for 80+, regenerate if needed
 
-## License
-
-Personal automation tool. Review all generated content before submitting to employers.

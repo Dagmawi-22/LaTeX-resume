@@ -1,0 +1,58 @@
+Job Title: Java Developer (Spring Boot) 
+
+
+
+Job Description: 
+
+We are looking for an experienced Java Developer to design, develop, and maintain scalable,
+high-performance backend systems using Java, Spring Boot, and Microservices 
+
+architecture. In this role, you will work on distributed systems that power critical business
+applications, collaborating closely with cross-functional teams to deliver reliable and secure
+solutions. The ideal candidate is passionate about backend engineering, enjoys solving complex
+technical challenges, and is eager to work with modern technologies in a fast-paced,
+collaborative environment.
+
+
+Key Responsibilities: 
+
+● Design, develop, and maintain Java applications using Spring Boot 
+
+● Build and manage microservices-based systems 
+
+● Develop high-performance services using gRPC and Protocol Buffers
+● Design and integrate data models using MongoDB 
+
+● Work with SQL and NoSQL databases to support application requirements
+● Develop and consume RESTful and gRPC APIs 
+
+● Ensure application performance, scalability, and security
+● Participate in code reviews, debugging, and optimization
+● Collaborate with cross-functional teams to deliver high-quality solutions
+
+
+Required Skills & Qualifications: 
+
+● Strong experience with Java (8+) 
+
+● Hands-on experience with Spring Boot 
+
+● Solid understanding of Microservices architecture● Experience with gRPC and Protocol Buffers
+● Experience working with MongoDB or other NoSQL databases
+● Working knowledge of SQL databases (MySQL, PostgreSQL, Oracle, or similar)
+● Knowledge of RESTful services and inter-service communication
+● Familiarity with Git and version control
+● Understanding of clean code and software design principles
+
+
+What We Offer: 
+
+● Competitive salary and performance-based incentives
+● Opportunity to work on modern, scalable backend systems 
+
+● Collaborative and supportive team environment
+● Learning and career growth opportunities
+● Exposure to cutting-edge technologies and best practices
+
+
+📧 Apply now by sending your resume to contact@eaglelionsystems.com

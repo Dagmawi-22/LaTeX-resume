@@ -1,0 +1,82 @@
+Junior Developer
+Muddy Mat
+·  Subscribe
+Save
+ Hide
+Junior Developer (Full-Stack) - Next.js · NestJS · TypeScript
+
+ 
+
+We’re looking for a Junior Developer who’s excited to build real products, write clean code, and grow fast alongside experienced engineers. This is a hands-on role where you’ll work across the stack, contribute to production features, and learn best practices in a real-world environment.
+
+ 
+
+If you enjoy solving problems, care about code quality, and want exposure to modern web technologies, this role is for you.
+
+ 
+
+What You’ll Do
+
+Build and maintain features using Next.js (App Router) on the frontend
+Develop APIs and backend services with NestJS
+Work with TypeScript across the full stack
+Implement and consume REST APIs
+Collaborate with designers, product, and senior developers
+Work with databases using Prisma ORM
+Implement and maintain authentication flows (JWT, sessions)
+Write clean, maintainable, and well-structured code
+Debug, test, and improve existing functionality
+Learn and apply SOLID principles and clean code practices
+ 
+
+What We’re Looking For
+
+Required Skills
+
+Hands-on experience with:
+Next.js (App Router)
+NestJS
+TypeScript
+Tailwind CSS
+Prisma ORM
+Understanding of REST APIs and client–server communication
+Knowledge of authentication flows (JWT, sessions)
+Basic understanding of data structures and algorithms
+Familiarity with SOLID principles and clean code practices
+Experience with both:
+SQL databases (e.g., PostgreSQL, MySQL)
+NoSQL databases (e.g., MongoDB)
+ 
+
+Nice to Have (But Not Required)
+
+Experience with e-commerce or SaaS applications
+Exposure to Docker or basic DevOps workflows
+Familiarity with testing (unit or integration)
+Understanding of performance optimization
+Prior experience working in an Agile environment
+ 
+
+Experience & Qualifications
+
+0–2 years of development experience (internships, freelance, or personal projects count)
+Portfolio, GitHub, or sample projects demonstrating real-world usage
+Degree not required if practical skills are strong
+ 
+
+What You’ll Get
+
+Real ownership over features and code
+Mentorship from senior developers
+Opportunity to grow into a mid-level role
+Work on production systems used by real customers
+A collaborative, feedback-driven engineering culture
+
+ 
+
+Required skills experience
+Nest.js	2 years
+Next.js	2 years
+TypeScript	2 years
+Tailwind CSS	2 years
+Prisma ORM	2 years

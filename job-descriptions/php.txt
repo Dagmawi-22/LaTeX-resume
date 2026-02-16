@@ -1,0 +1,62 @@
+About the job
+Company Description
+
+Elisoft Solution PLC is a premier software development company focused on delivering cutting-edge solutions to drive business transformation. Specializing in custom software development, mobile applications, and AI-driven platforms, Elisoft empowers organizations to achieve their goals through innovative technology. With a commitment to innovation and excellence, Elisoft is a trusted partner for businesses seeking future-ready digital solutions. Let's build the future together and shape the tech industry with our expertise!
+
+
+Senior Software Developer (PHP/CodeIgniter)
+
+Job Title: Senior Software Developer (PHP/CodeIgniter) 
+
+Company: Elisoft Solution PLC 
+
+Location: Addis Ababa, Ethiopia (Hybrid possible) 
+
+Job Type: Full-Time Application 
+
+Deadline: Feb 07, 2026 
+
+Email to Apply: info@elisoftsolution.com 
+
+Email Subject: Senior Developer – SVO
+
+
+About the Role
+
+Elisoft Solution PLC is implementing a new Humanitarian & Social Enterprise system (NGO ERP). We are looking for a Senior Software Developer to lead backend delivery, integrations, and high-quality releases across core modules.
+
+
+Key Responsibilities
+
+● Design and build backend services using PHP/CodeIgniter and REST APIs
+● Deliver ERP modules (Finance, HR, Donor/Fundraising, Beneficiary & Project Tracking, Reporting/M&E)
+● Build and support integrations (POS and other external tools/APIs)
+● Ensure secure access controls, approvals, audit trails, and data integrity
+● Write clean, maintainable code; conduct code reviews and mentor juniors
+● Collaborate with QA to support SIT/UAT readiness and defect resolution
+● Contribute to architecture decisions (including microservices where applicable)
+
+
+Requirements
+
+● 6+ years experience in web application development
+● Strong backend experience in PHP/CodeIgniter and API development
+● Strong SQL/database skills (MySQL/PostgreSQL/SQL Server)● Experience with Git and team-based development workflows● Must have delivered at least one production system● Strong problem-solving and communication skills
+
+
+Nice to Have
+● Experience with ERP/NGO systems
+ ● Microservices experience 
+
+● React.js / Next.js familiarity 
+
+● DevOps basics (Docker, CI/CD)
+
+
+How to Apply 
+
+Send CV + GitHub/Portfolio + 2–3 project links (or screenshots) to info@elisoftsolution.com 
+
+Subject: Senior Developer – SVO 
+
+Shortlisted candidates will be contacted within 3–5 days.

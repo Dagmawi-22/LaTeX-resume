@@ -1,0 +1,162 @@
+\documentclass[10.5pt,letterpaper]{article}
+
+% ATS-Friendly Resume Template
+% No graphics, clean formatting, standard fonts
+% Optimized for maximum content density while maintaining readability
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{charter} % Professional serif font - clean and readable
+\usepackage[scaled=0.92]{helvet} % Sans-serif for contrast
+\usepackage[top=0.5in, bottom=0.5in, left=0.6in, right=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{microtype} % Better text justification and spacing
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    pdftitle={Resume},
+    pdfauthor={Dagmawi Teka}
+}
+
+% Section formatting - ATS friendly with proper spacing
+\titleformat{\section}
+  {\large\bfseries\uppercase}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+% Compact lists with balanced spacing for readability
+\setlist[itemize]{leftmargin=*, itemsep=1pt, topsep=2pt, parsep=0pt}
+
+% Reduce spacing between paragraphs
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+
+% Perfect justification settings
+\sloppy % Better line breaking
+\emergencystretch=1em % Allow some stretch for better justification
+\tolerance=1000 % Better word spacing
+\hyphenpenalty=2000 % Reduce hyphenation
+\exhyphenpenalty=2000 % Reduce hyphenation at explicit hyphens
+
+% Custom commands
+\newcommand{\resumeSubheading}[4]{
+  \item[]
+  \vspace{-1pt}
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}
+    \vspace{-2pt}
+}
+
+\newcommand{\resumeItem}[1]{
+  \item[$\cdot$] \small{#1}
+}
+
+\begin{document}
+
+% Header - compact and clean
+\begin{center}
+    \textbf{\LARGE Dagmawi Teka} \\[2pt]
+    \textit{\large Full-Stack JavaScript Developer} \\[3pt]
+    \small dagmawi.teka1@gmail.com $|$ +251918888225 $|$ Addis Ababa, Ethiopia \\[2pt]
+    \small \href{https://linkedin.com/in/dagmawi-teka}{linkedin.com/in/dagmawi-teka} $|$ \href{https://github.com/Dagmawi-22}{github.com/Dagmawi-22} $|$ \href{https://dteka.vercel.app}{dteka.vercel.app}
+\end{center}
+
+\vspace{-6pt}
+
+% Professional Summary
+\section{Professional Summary}
+\vspace{-2pt}
+Full-Stack JavaScript Engineer with 4+ years building scalable backend systems and modern web applications using React, Next.js, Node.js, and TypeScript. Specialized in RESTful API development, PostgreSQL/MongoDB optimization, and event-driven architectures with expertise in clean code, automated testing, and Docker. Proven track record delivering production features across fintech and HR domains.
+
+\vspace{-2pt}
+
+% Experience
+\section{Experience}
+\begin{itemize}[leftmargin=0pt, label={}]
+\resumeSubheading
+  {Kifiya Financial Technologies}{Addis Ababa, Ethiopia}
+  {Senior Software Engineer}{Feb 2025 - Present}
+  \begin{itemize}
+    \resumeItem{Designed RESTful APIs for electronic device and invoice financing platforms using Node.js, ExpressJS, and PostgreSQL with optimized queries for real-time loan eligibility validation and installment tracking}
+    \resumeItem{Built asynchronous payment processing with event-driven patterns and implemented automated testing with Vitest, maintaining SOLID principles and 99.9\% uptime}
+    \resumeItem{Integrated credit assessment APIs enabling real-time risk-based decision-making and automated repayment workflows, improving processing efficiency}
+  \end{itemize}
+
+\vspace{1pt}
+
+\resumeSubheading
+  {Tikus}{Addis Ababa, Ethiopia}
+  {Software Engineer (Part-time)}{Jul 2024 - Present}
+  \begin{itemize}
+    \resumeItem{Integrated WebRTC-based livestreaming with Node.js and WebSocket communication for low-latency video delivery and real-time interactions}
+    \resumeItem{Developed optimized feed tracking system using MongoDB and Redis caching, capturing engagement metrics while maintaining responsive performance under high traffic}
+    \resumeItem{Implemented media compression pipelines reducing bandwidth usage by 40\%, improving overall app performance and user experience}
+  \end{itemize}
+
+\vspace{1pt}
+
+\resumeSubheading
+  {Ablaze Labs}{Addis Ababa, Ethiopia}
+  {Full-Stack Engineer}{Jun 2024 - Feb 2025}
+  \begin{itemize}
+    \resumeItem{Built secure payment systems with RESTful APIs using Node.js and TypeScript, implementing transaction validation following clean code principles}
+    \resumeItem{Developed interactive digital platform for a national science museum using React and Next.js with PostgreSQL backend, increasing visitor engagement by 60\%}
+    \resumeItem{Containerized applications with Docker and deployed to AWS EC2 with CI/CD pipelines using GitHub Actions for automated testing}
+  \end{itemize}
+
+\vspace{1pt}
+
+\resumeSubheading
+  {Africa Jobs Network}{Addis Ababa, Ethiopia}
+  {Full-Stack Engineer}{Aug 2022 - Jan 2024}
+  \begin{itemize}
+    \resumeItem{Implemented role-based access control in an ATS using Node.js, ExpressJS, and PostgreSQL with Prisma ORM, ensuring secure workflows and data integrity}
+    \resumeItem{Integrated advanced resume parsing APIs and built smart search with keyword matching using MongoDB full-text search, improving recruiter efficiency by 50\%}
+    \resumeItem{Developed RESTful APIs following SOLID principles, participated in code reviews, and wrote automated tests with Jest to maintain quality}
+  \end{itemize}
+
+\end{itemize}
+
+\vspace{-2pt}
+
+% Skills
+\section{Technical Skills}
+\small
+\textbf{Frontend:} React, Next.js, TypeScript, React Native, Tailwind CSS, Redux, Zustand\\
+\textbf{Backend:} Node.js, ExpressJS, Fastify, NestJS, RESTful APIs, GraphQL, tRPC, Microservices\\
+\textbf{Databases:} PostgreSQL, Prisma, MongoDB, Firebase, Redis, MySQL\\
+\textbf{DevOps \& Cloud:} Docker, Git, GitHub, AWS (EC2, S3, Lambda), Serverless, CI/CD, GitHub Actions, Nginx\\
+\textbf{Testing \& Practices:} Vitest, Jest, Automated Testing, Clean Code, SOLID Principles, Code Reviews
+
+\vspace{-2pt}
+
+% Education
+\section{Education}
+\begin{itemize}[leftmargin=0pt, label={}]
+\resumeSubheading
+  {University of Gondar}{Gondar, Ethiopia}
+  {Bachelor of Science in Computer Science}{2021}
+
+\vspace{1pt}
+
+\resumeSubheading
+  {Redi School of Digital Integration}{Berlin, Germany}
+  {Learning Experience Design Certificate}{2024}
+\end{itemize}
+
+\end{document}

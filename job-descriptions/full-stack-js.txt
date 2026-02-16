@@ -1,0 +1,67 @@
+Full Stack JS Developer
+
+Lumitech
+·  Subscribe
+Save
+ Hide
+Must-have:
+• 2+ years of commercial experience in backend development (or equivalent real-world project experience)
+• Good knowledge of JavaScript with an understanding of core functional programming concepts
+• Hands-on experience with React and Next.js
+• Practical experience using TypeScript
+• Experience with Node.js backend frameworks such as Fastify or ExpressJS (strong Node.js fundamentals required)
+• Experience designing and implementing RESTful APIs
+• Understanding of asynchronous programming, event-driven patterns, and common pitfalls
+• Knowledge of clean code principles and SOLID
+• Experience writing automated tests (Vitest or similar)
+• Proficiency with Git
+• Practical experience using Docker
+• Experience working with databases:
+PostgreSQL (experience with ORMs like Prisma is a plus, not mandatory),
+MongoDB or Firebase
+• Experience participating in code reviews (as author or reviewer)
+
+ 
+
+Nice to Have:
+
+Experience with cloud platforms such as AWS or GCP
+Familiarity with Serverless architectures
+Basic knowledge of Terraform
+Experience with Redis or similar caching solutions
+Basic understanding of microservices concepts
+Familiarity with message queues or brokers: RabbitMQ/SQS/BullMQ, or equivalents
+Understanding of communication protocols: HTTP, WebSocket, MQTT(a plus)
+Introductory understanding of distributed and high-scale system design
+
+ 
+
+What We Expect:
+
+Ability to write clean, maintainable, and readable code
+Willingness to learn and grow as a backend engineer
+Sense of ownership and responsibility for delivered features
+Interest in understanding product requirements and proposing improvements
+Team-oriented mindset and openness to feedback
+Required languages
+English	B2 - Upper Intermediate
+About Lumitech
+Lumitech is a Dubai-based custom software development company with R&D team in Eastern Europe. We collaborate with businesses across industries helping them build strong 
+engineering teams and create digital products. 
+
+Our focus is on building AI- and tech-driven development teams to help businesses increase operational efficiency and adapt to an AI-driven industry through custom software, 
+which is now more accessible than ever. 
+
+Lumitech invests heavily in engineering guidelines, best practices, knowledge-sharing sessions, and building a strong community within the company to ensure exceptional 
+quality. Our priorities are delivering high-quality products, establishing trusted relationships with our customers, and creating a sense of community that connects both our 
+clients and team. 
+
+We are one of the fastest-growing software development companies based in the UAE, achieving 2x engineering growth in 2024 and ranked among Clutch's 100 fastest-growing 
+software companies. 
+
+We might not change the world and neither will you. But together, we can create an impact.
+
+
+
+Company website:
+https://lumitech.co/

@@ -1,0 +1,74 @@
+EAY Impact is a global digital marketing company and a partner to leading platforms like Google, TikTok, and Meta. We develop high-performance ad optimization solutions that help PPC specialists automate and scale campaigns through seamless integration and advanced analytics.
+
+ 
+
+We are currently in an active development phase and are looking for an experienced Middle Full-Stack Developer to join our engineering team. In this role, you will take ownership of technical decisions and build high-quality solutions that directly align with our business goals.
+
+ 
+
+What you’ll help us to do:
+
+- Design and implement low-latency, high-availability, and performant solutions using the Cloudflare ecosystem;
+
+- Integrate scalable data storage solutions (D1, KV);
+
+- Create and maintain data processing and API pipelines;
+
+- Develop and optimize web interfaces for ad campaign management and monitoring;
+
+- Effectively handle multiple priorities, organize workload, and meet deadlines
+
+ 
+
+Here’s the experience that will help you to do the job:
+
+- 2+ years of Full-stack Software Development experience;
+
+- Frontend: Strong expertise in Next.js (App Router, Server Components), React, and TypeScript;
+
+- Backend & Infrastructure: Deep understanding of the Cloudflare Platform (Workers and Pages);
+
+- Data Storage: Hands-on experience with Cloudflare D1 (Serverless SQL) and Cloudflare KV;
+
+- Database & ORM: Proficiency in Drizzle ORM and the ability to write/optimize SQL queries;
+
+- Experience with CI/CD pipelines.
+
+ 
+
+We are also interested in your soft skills:
+
+- Ability to work on a variety of tasks with a high level of uncertainty;
+
+- Adaptable in approach and communication;
+
+- Eager problem-solver and strong team collaborator;
+
+- Detail-oriented and committed to delivering high-quality results.
+
+ 
+
+What you’ll get from working with us:
+
+- Competitive salary in a fast-growing company;
+
+- Paid days off and sick leaves;
+
+- Full reimbursement of professional certifications;
+
+- Compensation for English classes;
+
+- Career growth in a team of professionals and a knowledge-sharing atmosphere;
+
+- Team building and corporate activities
+
+ 
+
+Our stages:
+
+First screening — Technical interview — Offer
+
+Required languages
+English	B1 - Intermediate
+About Amon Trade
+We’re driven by a mission to provide excellence across every aspect of our business, staying ahead of industry trends and delivering tailored solutions that ensure our partners stay competitive. Join us in shaping the future of energy and technology.
